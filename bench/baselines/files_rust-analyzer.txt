@@ -1,0 +1,5 @@
+crates/ide-db/src/source_change.rs
+crates/ide-assists/src/handlers/generate_enum_projection_method.rs
+crates/hir-ty/src/lib.rs
+crates/ide/src/expand_macro.rs
+crates/ide-assists/src/handlers/expand_glob_import.rs

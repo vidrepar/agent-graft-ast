@@ -1,0 +1,22 @@
+[
+  {
+    "id": "ra-rename-find-struct-impl",
+    "repo": "rust-analyzer",
+    "prompt": "In the ide-assists crate, rename the helper function `find_struct_impl` to `find_impl_for_adt` (it works for any ADT, not just structs). Update its definition, every `use` import, every call site and every comment or doc comment that mentions it."
+  },
+  {
+    "id": "ra-invert-flip-flag",
+    "repo": "rust-analyzer",
+    "prompt": "In crates/ide-assists/src/utils.rs, add a required third parameter `flip_comparisons: bool` to `invert_boolean_expression` and pass it through to `invert_special_case`. When `flip_comparisons` is false, comparison expressions (`==`, `!=`, `<`, `<=`, `>`, `>=`) must not be rewritten to the opposite operator; they are negated as `!(expr)` instead. Other special cases keep working as today. Update every caller of `invert_boolean_expression` to pass `true`, so current behaviour is unchanged."
+  },
+  {
+    "id": "ra-add-field-goto-impl",
+    "repo": "rust-analyzer",
+    "prompt": "In crates/ide/src/goto_implementation.rs, add a new field `pub include_blanket_impls: bool` to the struct `GotoImplementationConfig`. Then set it to `false` at every place in the repository where a `GotoImplementationConfig` value is constructed, so behaviour stays the same."
+  },
+  {
+    "id": "ra-rename-huge",
+    "repo": "rust-analyzer",
+    "prompt": "Rename the method `add_file_edits` of `SourceChangeBuilder` (crates/ide-db/src/source_change.rs) to `push_file_edits` across the whole repository: its definition and every call site."
+  }
+]

@@ -1,0 +1,438 @@
+{
+  "versions": {
+    "ast-grep": "ast-grep 0.42.1",
+    "graft": "0.25.0 (pnpm add -g @nanonets/graft@0.25.0)",
+    "node": "v26.8.2",
+    "tiktoken": "0.14.0",
+    "os": "26.2",
+    "cpu": "Apple M3 Pro (12 cores)"
+  },
+  "tokenizer": "tiktoken o200k_base",
+  "load_avg_start_end": [
+    "9:25  up 1 day,  4:10, 2 users, load averages: 2.74 8.07 8.53",
+    " 9:28  up 1 day,  4:13, 2 users, load averages: 15.15 11.38 9.78"
+  ],
+  "index": {
+    "graft_build": {
+      "ts-monorepo": {
+        "runs": 5,
+        "wall_s_median": 4.55,
+        "wall_s_all": [
+          4.87,
+          4.85,
+          4.55,
+          4.29,
+          4.18
+        ],
+        "maxrss_bytes_median": 537313280,
+        "maxrss_bytes_max": 554680320
+      },
+      "ts-service": {
+        "runs": 5,
+        "wall_s_median": 0.81,
+        "wall_s_all": [
+          0.79,
+          0.81,
+          0.87,
+          0.79,
+          0.84
+        ],
+        "maxrss_bytes_median": 231129088,
+        "maxrss_bytes_max": 231505920
+      },
+      "rust-analyzer": {
+        "runs": 5,
+        "wall_s_median": 5.94,
+        "wall_s_all": [
+          5.94,
+          5.64,
+          5.82,
+          6.17,
+          9.54
+        ],
+        "maxrss_bytes_median": 1122926592,
+        "maxrss_bytes_max": 1124401152
+      }
+    },
+    "astgrep_scan_kind": {
+      "ts-monorepo": {
+        "runs": 5,
+        "wall_s_median": 0.07,
+        "wall_s_all": [
+          0.09,
+          0.13,
+          0.07,
+          0.07,
+          0.06
+        ],
+        "maxrss_bytes_median": 45858816,
+        "maxrss_bytes_max": 48414720
+      },
+      "ts-service": {
+        "runs": 5,
+        "wall_s_median": 0.04,
+        "wall_s_all": [
+          0.04,
+          0.04,
+          0.04,
+          0.08,
+          0.04
+        ],
+        "maxrss_bytes_median": 18972672,
+        "maxrss_bytes_max": 19070976
+      },
+      "rust-analyzer": {
+        "runs": 5,
+        "wall_s_median": 0.23,
+        "wall_s_all": [
+          0.22,
+          0.23,
+          0.22,
+          0.42,
+          0.23
+        ],
+        "maxrss_bytes_median": 49184768,
+        "maxrss_bytes_max": 54034432
+      }
+    },
+    "astgrep_run_pattern": {
+      "ts-monorepo": {
+        "runs": 5,
+        "wall_s_median": 0.05,
+        "wall_s_all": [
+          0.05,
+          0.08,
+          0.06,
+          0.04,
+          0.04
+        ],
+        "maxrss_bytes_median": 45056000,
+        "maxrss_bytes_max": 45744128
+      },
+      "ts-service": {
+        "runs": 5,
+        "wall_s_median": 0.03,
+        "wall_s_all": [
+          0.03,
+          0.03,
+          0.03,
+          0.03,
+          0.03
+        ],
+        "maxrss_bytes_median": 18235392,
+        "maxrss_bytes_max": 18284544
+      },
+      "rust-analyzer": {
+        "runs": 5,
+        "wall_s_median": 0.22,
+        "wall_s_all": [
+          0.22,
+          0.2,
+          0.23,
+          0.45,
+          0.22
+        ],
+        "maxrss_bytes_median": 41713664,
+        "maxrss_bytes_max": 51429376
+      }
+    }
+  },
+  "query": {
+    "graft_mcp": {
+      "ts-monorepo": {
+        "runs": 5,
+        "init_ms_median": 201,
+        "server_maxrss_bytes_median": 211288064,
+        "server_tree_peak_rss_bytes_sampled_max": 220626944,
+        "graft_trace_calls": {
+          "calls_per_run": 100,
+          "p50_ms_median": 19.93,
+          "p99_ms_median": 28.29,
+          "errors_total": 0,
+          "mean_resp_bytes": 648
+        },
+        "graft_file_api": {
+          "calls_per_run": 100,
+          "p50_ms_median": 18.42,
+          "p99_ms_median": 22.87,
+          "errors_total": 85,
+          "mean_resp_bytes": 541
+        }
+      },
+      "ts-service": {
+        "runs": 5,
+        "init_ms_median": 207.9,
+        "server_maxrss_bytes_median": 142032896,
+        "server_tree_peak_rss_bytes_sampled_max": 148799488,
+        "graft_trace_calls": {
+          "calls_per_run": 100,
+          "p50_ms_median": 6.34,
+          "p99_ms_median": 8.14,
+          "errors_total": 0,
+          "mean_resp_bytes": 450
+        },
+        "graft_file_api": {
+          "calls_per_run": 100,
+          "p50_ms_median": 6.59,
+          "p99_ms_median": 12.87,
+          "errors_total": 0,
+          "mean_resp_bytes": 1254
+        }
+      },
+      "rust-analyzer": {
+        "runs": 5,
+        "init_ms_median": 210.7,
+        "server_maxrss_bytes_median": 398524416,
+        "server_tree_peak_rss_bytes_sampled_max": 405995520,
+        "graft_trace_calls": {
+          "calls_per_run": 100,
+          "p50_ms_median": 47.97,
+          "p99_ms_median": 81.47,
+          "errors_total": 0,
+          "mean_resp_bytes": 1437
+        },
+        "graft_file_api": {
+          "calls_per_run": 100,
+          "p50_ms_median": 41.15,
+          "p99_ms_median": 54.92,
+          "errors_total": 0,
+          "mean_resp_bytes": 2957
+        }
+      }
+    },
+    "graft_mcp_no_refresh": {
+      "ts-monorepo": {
+        "runs": 5,
+        "init_ms_median": 202.8,
+        "server_maxrss_bytes_median": 244072448,
+        "server_tree_peak_rss_bytes_sampled_max": 245448704,
+        "graft_trace_calls": {
+          "calls_per_run": 100,
+          "p50_ms_median": 1.53,
+          "p99_ms_median": 3.06,
+          "errors_total": 0,
+          "mean_resp_bytes": 648
+        },
+        "graft_file_api": {
+          "calls_per_run": 100,
+          "p50_ms_median": 0.28,
+          "p99_ms_median": 0.7,
+          "errors_total": 85,
+          "mean_resp_bytes": 541
+        }
+      },
+      "ts-service": {
+        "runs": 5,
+        "init_ms_median": 215.1,
+        "server_maxrss_bytes_median": 139018240,
+        "server_tree_peak_rss_bytes_sampled_max": 140099584,
+        "graft_trace_calls": {
+          "calls_per_run": 100,
+          "p50_ms_median": 0.37,
+          "p99_ms_median": 1.15,
+          "errors_total": 0,
+          "mean_resp_bytes": 450
+        },
+        "graft_file_api": {
+          "calls_per_run": 100,
+          "p50_ms_median": 0.17,
+          "p99_ms_median": 0.26,
+          "errors_total": 0,
+          "mean_resp_bytes": 1254
+        }
+      },
+      "rust-analyzer": {
+        "runs": 5,
+        "init_ms_median": 203.2,
+        "server_maxrss_bytes_median": 330858496,
+        "server_tree_peak_rss_bytes_sampled_max": 332988416,
+        "graft_trace_calls": {
+          "calls_per_run": 100,
+          "p50_ms_median": 8.15,
+          "p99_ms_median": 23.99,
+          "errors_total": 0,
+          "mean_resp_bytes": 1437
+        },
+        "graft_file_api": {
+          "calls_per_run": 100,
+          "p50_ms_median": 0.68,
+          "p99_ms_median": 3.61,
+          "errors_total": 0,
+          "mean_resp_bytes": 2957
+        }
+      }
+    },
+    "astgrep_run": {
+      "ts-monorepo": {
+        "runs": 5,
+        "queries_per_run": 30,
+        "cmd": "ast-grep run -p '<SYM>($$$)' -l ts --json=stream .",
+        "p50_ms_median": 42.05,
+        "p99_ms_median": 58.25,
+        "maxrss_bytes_max": 44744704
+      },
+      "ts-service": {
+        "runs": 5,
+        "queries_per_run": 30,
+        "cmd": "ast-grep run -p '<SYM>($$$)' -l ts --json=stream .",
+        "p50_ms_median": 29.87,
+        "p99_ms_median": 35.49,
+        "maxrss_bytes_max": 18432000
+      },
+      "rust-analyzer": {
+        "runs": 5,
+        "queries_per_run": 30,
+        "cmd": "ast-grep run -p '<SYM>($$$)' -l rs --json=stream .",
+        "p50_ms_median": 160.47,
+        "p99_ms_median": 204.86,
+        "maxrss_bytes_max": 48496640
+      }
+    }
+  },
+  "tokens": {
+    "ts-monorepo": {
+      "files": [
+        {
+          "file": "ts-monorepo file 1",
+          "lines": 46,
+          "raw_tokens": 337,
+          "file_api_tokens": 137,
+          "file_api_tokens_no_banner": 58,
+          "is_error": false
+        },
+        {
+          "file": "ts-monorepo file 2",
+          "lines": 57,
+          "raw_tokens": 634,
+          "file_api_tokens": 109,
+          "file_api_tokens_no_banner": 30,
+          "is_error": false
+        },
+        {
+          "file": "ts-monorepo file 3",
+          "lines": 76,
+          "raw_tokens": 878,
+          "file_api_tokens": 247,
+          "file_api_tokens_no_banner": 168,
+          "is_error": false
+        },
+        {
+          "file": "ts-monorepo file 4",
+          "lines": 101,
+          "raw_tokens": 1187,
+          "file_api_tokens": 146,
+          "file_api_tokens_no_banner": 63,
+          "is_error": false
+        },
+        {
+          "file": "ts-monorepo file 5",
+          "lines": 161,
+          "raw_tokens": 1852,
+          "file_api_tokens": 362,
+          "file_api_tokens_no_banner": 279,
+          "is_error": false
+        }
+      ],
+      "total_raw": 4888,
+      "total_file_api": 1001,
+      "total_file_api_no_banner": 598,
+      "ratio_raw_over_api": 4.88
+    },
+    "ts-service": {
+      "files": [
+        {
+          "file": "ts-service file 1",
+          "lines": 87,
+          "raw_tokens": 833,
+          "file_api_tokens": 632,
+          "file_api_tokens_no_banner": 553,
+          "is_error": false
+        },
+        {
+          "file": "ts-service file 2",
+          "lines": 111,
+          "raw_tokens": 1424,
+          "file_api_tokens": 173,
+          "file_api_tokens_no_banner": 90,
+          "is_error": false
+        },
+        {
+          "file": "ts-service file 3",
+          "lines": 116,
+          "raw_tokens": 1568,
+          "file_api_tokens": 427,
+          "file_api_tokens_no_banner": 346,
+          "is_error": false
+        },
+        {
+          "file": "ts-service file 4",
+          "lines": 238,
+          "raw_tokens": 2811,
+          "file_api_tokens": 535,
+          "file_api_tokens_no_banner": 452,
+          "is_error": false
+        },
+        {
+          "file": "ts-service file 5",
+          "lines": 241,
+          "raw_tokens": 2815,
+          "file_api_tokens": 978,
+          "file_api_tokens_no_banner": 895,
+          "is_error": false
+        }
+      ],
+      "total_raw": 9451,
+      "total_file_api": 2745,
+      "total_file_api_no_banner": 2336,
+      "ratio_raw_over_api": 3.44
+    },
+    "rust-analyzer": {
+      "files": [
+        {
+          "file": "crates/ide-db/src/source_change.rs",
+          "lines": 406,
+          "raw_tokens": 3251,
+          "file_api_tokens": 1150,
+          "file_api_tokens_no_banner": 1067,
+          "is_error": false
+        },
+        {
+          "file": "crates/ide-assists/src/handlers/generate_enum_projection_method.rs",
+          "lines": 483,
+          "raw_tokens": 2786,
+          "file_api_tokens": 499,
+          "file_api_tokens_no_banner": 416,
+          "is_error": false
+        },
+        {
+          "file": "crates/hir-ty/src/lib.rs",
+          "lines": 627,
+          "raw_tokens": 5544,
+          "file_api_tokens": 1469,
+          "file_api_tokens_no_banner": 1384,
+          "is_error": false
+        },
+        {
+          "file": "crates/ide/src/expand_macro.rs",
+          "lines": 867,
+          "raw_tokens": 5410,
+          "file_api_tokens": 804,
+          "file_api_tokens_no_banner": 721,
+          "is_error": false
+        },
+        {
+          "file": "crates/ide-assists/src/handlers/expand_glob_import.rs",
+          "lines": 1260,
+          "raw_tokens": 6186,
+          "file_api_tokens": 1090,
+          "file_api_tokens_no_banner": 1007,
+          "is_error": false
+        }
+      ],
+      "total_raw": 23177,
+      "total_file_api": 5012,
+      "total_file_api_no_banner": 4595,
+      "ratio_raw_over_api": 4.62
+    }
+  }
+}

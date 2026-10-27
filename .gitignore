@@ -1,0 +1,11 @@
+target/
+.herdr/
+.secrets/
+
+# graft's local graph cache — regenerable, not committed (run `graft build`).
+/graft/
+.agent-graft/
+bench/*/out/
+bench/tasks/out*/
+bench/tasks/local_tasks.*
+bench/tasks/__pycache__/
